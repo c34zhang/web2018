@@ -1,0 +1,102 @@
+@font-face {
+    font-family: Favorit;
+    src: url('Favorit.woff') format('woff');}
+}
+
+body{
+    margin: 0; padding: 0;
+    color: #131313;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.half {
+    width: 50%; height: 100vh;
+    background-color: #f1f1f1;
+    float: left;
+}
+
+#picture {
+    width: 100%;
+    height: 100%;
+    background-image: url(imgs/frank.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1 {
+    position: absolute;
+    width: 50vw;
+    margin: 5% 0 0 4%;
+    font-family: Favorit; font-style: italic;
+    font-size: 11vw; line-height: 8vw; letter-spacing: -.5vw;
+}
+
+h2 {
+    font-family: 'Amethysta', serif; 
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 100vh;
+    text-transform: uppercase;
+    width: 50vw;
+    margin: 0;
+    position: absolute;
+    text-align: justify;
+}
+
+h2:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+
+p {
+    position: absolute;
+    bottom: 0;
+    margin: 0% 0% 4% 5%;
+    width: 40vw;
+    font-family: monospace; 
+}
+
+#gradient {
+    position: absolute;
+    display: inline-block;
+    left: 50vw;
+    width: 50px;
+    height: 100vh;
+    background: linear-gradient(to right, rgba(241, 241, 241, 1) 0%, rgba(255, 255, 255, 0) 100%)
+}
+
+@media only screen and (max-width:800px) {
+    
+    .half {
+        width: 100vw; height: 50vh;
+    }
+    
+    h1 {
+        width: 100%;
+        font-size: 80px;
+        margin: 6% 10%;
+        line-height: 60px;
+    }
+    
+    h2 {
+        line-height: 46vh;
+        font-size: 22px;
+        width: 100vw;
+    }
+    
+    p {
+        bottom: 50vh;
+        width: 90%;
+        margin: 5% 5%;
+    }
+    
+    #gradient {
+    left: 0vw;
+    width: 100vw;
+    height: 50px;
+    background: linear-gradient(to bottom, rgba(241, 241, 241, 1) 0%, rgba(255, 255, 255, 0) 100%)
+    }
+}
