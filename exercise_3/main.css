@@ -1,0 +1,35 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Inconsolata', monospace; letter-spacing: 2px; text-transform: uppercase; font-weight: bold;
+}
+
+.background {
+  background-image: url("imgs/TRAVIS-SCOTT.jpg");
+  height: 100%;
+  position: relative;
+  opacity: 0.90;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text {
+    position: absolute;
+    top: 40vh; left: 5vw;
+    width: 50vw; 
+    font-size: 1.2vw;
+    line-height: 3vh;
+    text-align: left;
+    color: white;
+        
+}
+
+@media only screen and (max-width:1000px) {
+
+    .text {
+        top: 50vh;
+        margin: auto;
+        font-size: 1.2vw;
+        line-height: 2.2vh;
+    }

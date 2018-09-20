@@ -10,10 +10,9 @@ body{
     overflow: hidden;
 }
 
-.half {
-    width: 50%; height: 100vh;
+.b {
+    width: 100vw; height: 100vh;
     background-color: #f1f1f1;
-    float: left;
 }
 
 #picture {
@@ -70,8 +69,9 @@ p {
 
 @media only screen and (max-width:800px) {
     
-    .half {
+    body {
         width: 100vw; height: 50vh;
+        position: fixed;
     }
     
     h1 {
