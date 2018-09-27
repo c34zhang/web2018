@@ -1,0 +1,172 @@
+body {
+	margin: 0;
+	padding: 0;
+    text-align: center;
+}
+
+p   {
+    font-family: helvetica;
+    color: grey;
+    position: absolute;
+    margin: .65vw .8vw;
+}
+
+#container {
+    margin: 2vw 0vw 2vw 1vw;
+    display: inline-block;
+}
+
+.grid {
+    background-color: #f1f1f1;
+    width: 26vw;
+    height: 26vw;
+    display: inline-block;
+    margin: 0vw 1vw 1vw 0vw;
+}
+
+/* 1 */
+
+#square {
+    background-color: red;
+    width: 50%; height: 50%;
+    margin: 25%;
+    animation: spin 10s linear;
+}
+
+@keyframes spin {
+    100% {transform: rotate(360deg)}
+}
+
+/*2*/
+#rectangle {
+    background-color: darkcyan;
+    width: 80%; height: 40%;
+    margin: 30% 10%;
+    transition: 2s transform;
+}
+
+#rectangle:hover {
+    transform: scale(.95);
+}
+
+/*3*/
+
+#roundedSquare{
+    background-color: blue;
+    width: 50%;
+    height: 50%;
+    margin: 25%;
+    border-radius: 20%;
+}
+
+#roundedSquare:active {
+    margin: 0%;
+    height: 100%;
+    width: 100%;
+}
+
+#roundedSquare: hover {
+    border-radius:0%;
+}
+
+/*4*/
+
+#full {
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+}
+
+#full:hover{
+    animation: fullAnimation 1s infinite;
+}
+
+@keyframes fullAnimation {
+    0% {background-color: pink;}
+    50% {background-color: yellow;}
+    100% {background-color: pink;}
+}
+
+/* 5 */
+#tallRectangle {
+    background-color: grey;
+    width: 40%; height: 80%;
+    margin: 10% 30%;
+    animation: rotateAnimation 5s ease infinite;
+}
+
+@keyframes rotateAnimation {
+    0% {transform: rotate(0deg); opacity:0;}
+    50% {transform: rotate(-90deg); opacity: 1;}
+    100% {transform: rotate(-180deg); opacity:0}
+}
+
+/*6*/
+
+#circle {
+    background-color: green;
+    width: 50%; height: 50%;
+    margin: 25%;
+    border-radius: 50%;
+    animation: positionAnimation 1.5s linear infinite;
+}
+
+@keyframes positionAnimation {
+    0% {margin-left: 25%}
+    25% {margin-left: 50%}
+    75% {margin-left: 0%}
+    100% {margin-left: 25%}
+}
+
+/*7*/
+#oval {
+    background-color: purple;
+    width: 100%; height: 60%;
+    margin: 20% 0%;
+    border-radius: 50%;
+}
+
+#triangle {
+    width: 0; height: 0;
+    margin: 3vw;
+    border-left: 10vw solid transparent;
+    border-right: 10vw solid transparent;
+    border-top: 0vw solid gs;
+    border-bottom: 20vw solid tan;
+}
+
+/*9*/
+#cross {
+    width: 0; height: 0;
+    border-right: 26vw solid yellow;
+    border-top: 25vw solid transparent;
+
+}
+
+#lineX {
+    width: 100%;
+    height: 0;
+    margin: 0;
+    border-bottom: 1px solid black;
+    position: relative;
+}
+
+#lineY {
+    height: 100%;
+    width: 0;
+    margin: 0;
+    border-left: 1px solid black;
+    position: relative;
+
+}
+
+/*12*/
+#dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin: 0;
+    position: absolute;
+    pointer-events: none;
+}
