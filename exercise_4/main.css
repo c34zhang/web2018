@@ -1,0 +1,52 @@
+body{
+    background: url(https://lh3.googleusercontent.com/9h6vZcjigz_E6Zh1Hbjpr6NTrsKg5_UX-Pr0nKi2K029nCjIXnVsjFJ3pUk_7isGY76-Cbsmiw=w640-h400-e365) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.planet{
+  width:200px;
+  height:200px;
+  position:absolute;
+  border-radius:50%;
+  overflow:hidden;
+  box-shadow: 10 10 60px -20px white;
+  left:50%;
+  top:50%;
+  margin:0;
+  animation: move 3s ease forwards, rotate 3s ease infinite;
+}
+
+#fill{
+  animation: translateBackground 40s infinite linear;  
+  background:url(https://www.universetoday.com/wp-content/uploads/2008/05/impactcrater.jpg) repeat-x;
+  width:200px;
+  height:200px;
+  position:absolute;
+  border-radius:50%;
+}
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes move {
+  from {
+    top: 30;
+    left: 30;
+  }
+  to {
+    top: 30%;
+    left: 20%;
+  }
+}
+
+
