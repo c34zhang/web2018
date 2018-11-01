@@ -49,7 +49,7 @@ var	effects = [
 var	fonts = [
 	"'Inconsolata', monospace",
 	"IM Fell English SC', serif",
-	"Special Elite, cursive",
+	"'Cutive Mono', monospace",	
 	"'Lucida Console', monospace"
     
 ];
